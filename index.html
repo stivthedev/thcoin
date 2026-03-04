@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>$THC — The Handicap Coin</title>
+
+    <style>
+        :root {
+            --babyblue: #cfefff;
+            --babyblue-deep: #b6e8ff;
+            --text: #1a1a1a;
+            --muted: #444;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(180deg, var(--babyblue), var(--babyblue-deep));
+            color: var(--text);
+        }
+
+        .container {
+            max-width: 850px;
+            margin: auto;
+            padding: 40px 20px 60px;
+        }
+
+        /* HERO */
+
+        .hero {
+            text-align: center;
+            position: relative;
+        }
+
+        /* IMAGE WRAPPER */
+
+        .image-wrapper {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            margin: 0 auto 10px;
+        }
+
+        /* MAIN IMAGE */
+
+        .logo {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+            display: block;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        /* BLURRED STRIP AT BOTTOM */
+
+        .title-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 80px;
+            overflow: hidden;
+        }
+
+        /* Blurred background using same image */
+        .title-overlay::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: url('logo.jpg') center/cover no-repeat;
+            filter: blur(1px);
+            transform: scale(1.2);
+        }
+
+        /* Frosted glass layer */
+        .title-overlay::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(242, 223, 223, 0.35);
+            backdrop-filter: blur(5px);
+        }
+
+        /* TEXT */
+
+        .title-text {
+            position: absolute;
+            bottom: 22px;
+            width: 100%;
+            font-size: 40px;
+            font-weight: 900;
+            z-index: 2;
+            color: #111;
+        }
+
+        .subtitle {
+            font-size: 15px;
+            color: var(--muted);
+            margin-top: 8px;
+        }
+
+        /* BUTTONS */
+
+        .buttons {
+            margin-top: 18px;
+        }
+
+        .buttons a {
+            text-decoration: none;
+            padding: 10px 22px;
+            margin: 6px;
+            border-radius: 25px;
+            font-weight: bold;
+            display: inline-block;
+            background: #1a1a1a;
+            color: white;
+            font-size: 14px;
+            transition: .2s ease;
+        }
+
+        .buttons a:hover {
+            background: #000;
+        }
+
+        /* CARDS */
+
+        .card {
+            background: white;
+            padding: 22px;
+            border-radius: 16px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+            margin: 20px 0;
+        }
+
+        .card h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 8px;
+        }
+
+        /* QUOTE */
+
+        .quote {
+            text-align: center;
+            font-size: 18px;
+            font-weight: 800;
+            margin: 30px 0;
+        }
+
+        .quote span {
+            display: block;
+            margin: 6px 0;
+        }
+
+        /* FOOTER */
+
+        .footer {
+            text-align: center;
+            font-size: 13px;
+            color: #555;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="hero">
+
+            <div class="image-wrapper">
+
+                <img src="logo.jpg" alt="$THC Logo" class="logo">
+
+                <div class="title-overlay"></div>
+                <div class="title-text">$THC</div>
+
+            </div>
+
+            <div class="subtitle">The Handicap Coin</div>
+
+            <div class="buttons">
+                <a href="#">Buy $THC</a>
+                <a href="#">Community</a>
+            </div>
+
+        </div>
+
+        <div class="card">
+            <h2>We Got Handicapped</h2>
+            <p>
+                War headlines everywhere. Markets reacting instantly.
+                Crypto didn’t just dip — it folded.
+            </p>
+            <p>
+                Liquidations hit. Positions vanished.
+                Wallet balance looking suspiciously close to zero.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>Brain Fried</h2>
+            <p>
+                Staring at charts at 3AM.
+                Buying every “final bottom.”
+                Refreshing the portfolio like it might magically recover.
+            </p>
+            <p>
+                The cycle hit hard. Mentally and financially.
+            </p>
+        </div>
+
+        <div class="quote">
+            <span>We got handicapped by the war.</span>
+            <span>We got handicapped by the crash.</span>
+            <span>Brain fried.</span>
+            <span>Wallet empty.</span>
+        </div>
+
+        <div class="card">
+            <h2>Why $THC Exists</h2>
+            <p>
+                Not full strength. Not peak confidence.
+                Just experience earned the hard way.
+            </p>
+            <p>
+                Accept the handicap. Keep playing anyway.
+            </p>
+        </div>
+
+        <div class="card" style="text-align:center;">
+            <h2>Disclaimer</h2>
+            <p>
+                $THC is a meme token created for entertainment.
+                Cryptocurrency markets are volatile and speculative.
+                This is not financial advice.
+            </p>
+        </div>
+
+        <div class="footer">
+            © 2026 $THC — The Handicap Coin
+        </div>
+
+    </div>
+
+</body>
+
+</html>
